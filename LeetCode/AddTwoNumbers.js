@@ -52,8 +52,8 @@ var addTwoNumbers = function (l1, l2) {
       curResult = curResult.next;
     }
 
-    curL1Node = curL1Node.next;
-    curL2Node = curL2Node.next;
+    if (curL1Node) curL1Node = curL1Node.next;
+    if (curL2Node) curL2Node = curL2Node.next;
   }
 };
 
